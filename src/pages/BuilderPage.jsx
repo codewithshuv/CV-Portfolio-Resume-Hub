@@ -53,9 +53,9 @@ const BuilderPage = () => {
   const ActiveComponent = steps[activeStep].component;
 
   return (
-    <div style={{ display: 'flex', height: '100vh', overflow: 'hidden', background: 'var(--bg-main)' }}>
+    <div className="builder-layout">
       {/* Left Column: Form Builder */}
-      <div style={{ width: '45%', display: 'flex', flexDirection: 'column', background: 'var(--bg-card)', borderRight: '1px solid var(--border-color)', zIndex: 10 }}>
+      <div className="builder-left">
         
         {/* Logo and Header Tabs */}
         <div style={{ display: 'flex', alignItems: 'center', padding: '1.5rem 1.5rem 0 1.5rem', borderBottom: '1px solid var(--border-color)', gap: '2rem' }}>
@@ -143,7 +143,7 @@ const BuilderPage = () => {
       </div>
 
       {/* Right Column: Preview */}
-      <div style={{ width: '55%', display: 'flex', flexDirection: 'column', background: 'var(--bg-main)', padding: '2rem' }}>
+      <div className="builder-right">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
             <h3 style={{ fontSize: '1.2rem', color: 'var(--secondary)', fontWeight: '600' }}>Preview</h3>
